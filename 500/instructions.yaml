@@ -25,3 +25,16 @@ instructions:
     - Design or outline 90-minute workshops
     - Review or tag startup documents
     - Create one-pagers or diagnostics
+
+paths:
+  /experiments.yaml:
+    get:
+      summary: Get curated blog references on experiments
+      operationId: getExperimentResources
+      responses:
+        '200':
+          description: YAML list of resources
+          content:
+            text/yaml:
+              schema:
+                type: string
