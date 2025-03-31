@@ -1,0 +1,32 @@
+openapi: 3.1.0
+info:
+  title: Mentor GPT Resources API
+  version: 1.0.0
+
+servers:
+  - url: https://raw.githubusercontent.com/yourusername/gpt/main/500
+
+paths:
+  /instructions.yaml:
+    get:
+      summary: Load GPT mentor behavior and tone profile
+      operationId: getMentorInstructions
+      responses:
+        '200':
+          description: Behavioral guidance and tone definition
+          content:
+            text/yaml:
+              schema:
+                type: string
+
+  /experiments.yaml:
+    get:
+      summary: Load curated blog resources for experimentation
+      operationId: getExperimentResources
+      responses:
+        '200':
+          description: List of blog posts about product/growth experiments
+          content:
+            text/yaml:
+              schema:
+                type: string
