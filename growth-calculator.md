@@ -101,3 +101,9 @@ LTV/CAC ratio: 38.8
 Months to MRR goal: 15.8
 
 
+
+## Instructions
+
+Create the index.html file as per the above instructions.
+
+
